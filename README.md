@@ -1,6 +1,6 @@
 # Project Folder — File Guide
 
-**Nadia Farsiani** — data preparation, georeferencing, digitizing
+Data preparation, georeferencing, digitizing
 
 ## How to open the project
 
