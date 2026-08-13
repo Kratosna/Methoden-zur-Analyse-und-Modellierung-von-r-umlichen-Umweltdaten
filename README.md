@@ -46,7 +46,6 @@ Each shapefile is really a **set of files sharing one name** — e.g. `Straßenn
 
 ## Person 2 – Buffer Analysis and Exclusion Areas
 
-**Methods for the Analysis and Modelling of Spatial Environmental Data — Assignment 4, Summer Semester 2026**
 
 **Study area:** ~182 km² west of Hanover | **CRS:** EPSG:31467 (DHDN / Gauss-Krüger zone 3)
 
