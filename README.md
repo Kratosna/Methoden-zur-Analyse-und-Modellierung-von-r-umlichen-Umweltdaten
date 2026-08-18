@@ -42,6 +42,18 @@ The seven shapefiles supplied with the assignment.
 | `Person3.gpkg` | GeoPackage containing the layers created during Part 3. | Includes the `Ackerland` and `Gruenland` selection, Clip, Dissolve, Difference, Multipart to Singleparts and the final result. |
 | `Suitable_Windfarm_Areas` | Final result layer stored inside `Person3.gpkg`. | Contains 4 suitable areas of at least 18 ha, with a total area of approximately 90.93 ha. |
 | `Map_2_Suitable_Areas.pdf` | Exported final map showing the suitable areas for wind turbine development. | Map 2 of the assignment. |
+| Ackerland_raw | Ackerland polygons extracted separately from Landnutzung_fixed. | Input layer for the separate Ackerland analysis. |
+| Ackerland_frame | Ackerland after clipping to the Frame boundary. | Contains only areas within the study area. |
+| Ackerland_dissolved | Adjacent Ackerland polygons after Dissolve. | Removes internal boundaries between contiguous Ackerland polygons. |
+| Ackerland_after_exclusion | Ackerland remaining after subtracting Total_Exclusion_Area. | Contains only Ackerland outside all exclusion buffers. |
+| Ackerland_singleparts | Remaining Ackerland divided into individual continuous polygons. | 118 patches remain, covering approximately 537.72 ha in total; the largest patch is approximately 29.96 ha. |
+| Ackerland_18ha | Ackerland areas with a minimum size of 18 ha. | Used to check separately how many Ackerland patches meet the minimum-area criterion. |
+| Gruenland_raw | Gruenland polygons extracted separately from Landnutzung_fixed. | Input layer for the separate Gruenland analysis. |
+| Gruenland_frame | Gruenland after clipping to the Frame boundary. | Contains only areas within the study area. |
+| Gruenland_dissolved | Adjacent Gruenland polygons after Dissolve. | Removes internal boundaries between contiguous Gruenland polygons. |
+| Gruenland_after_exclusion | Gruenland remaining after subtracting Total_Exclusion_Area. | Contains only Gruenland outside all exclusion buffers. |
+| Gruenland_singleparts | Remaining Gruenland divided into individual continuous polygons. | 22 patches remain, covering approximately 33.46 ha in total; the largest patch is approximately 11.25 ha. |
+| Gruenland_18ha | Gruenland areas with a minimum size of 18 ha. | No Gruenland patch reaches 18 ha; the largest remaining patch is approximately 11.25 ha. |
 
 
 ## 4. A note on the shapefiles (.shp)
