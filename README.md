@@ -37,6 +37,12 @@ The seven shapefiles supplied with the assignment.
 | `Luftbild.points` | The georeferencing control points exported from QGIS. | Backs the accuracy figure in the report (5.1 px). Documentation only. |
 | `Altwasser.gpkg` | The digitized oxbow arms — 7 polygons (field `typ = 'Altwasser'`). | 200 m protection buffer (biotope). Single-file GeoPackage. |
 | `DLM.pdf` | Exported draft of Map 1 (the Digital Landscape Model). | Draft — cartography to be finalized. |
+| `Buffer.gpkg` | Contains the individual buffers for roads, railway, power lines, water, forest, oxbow arms and settlements, together with intermediate analysis layers. | Used to check and trace the creation of the exclusion areas. |
+| `Total_Exclusion_Area.gpkg` | The combined exclusion layer after Merge, Fix Geometries, Dissolve and Clip to the `Frame` boundary. | Main input for the final suitability analysis. |
+| `Person3.gpkg` | GeoPackage containing the layers created during Part 3. | Includes the `Ackerland` and `Gruenland` selection, Clip, Dissolve, Difference, Multipart to Singleparts and the final result. |
+| `Suitable_Windfarm_Areas` | Final result layer stored inside `Person3.gpkg`. | Contains 4 suitable areas of at least 18 ha, with a total area of approximately 90.93 ha. |
+| `Map_2_Suitable_Areas.pdf` | Exported final map showing the suitable areas for wind turbine development. | Map 2 of the assignment. |
+
 
 ## 4. A note on the shapefiles (.shp)
 
