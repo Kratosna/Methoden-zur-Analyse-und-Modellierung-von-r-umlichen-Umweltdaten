@@ -105,7 +105,9 @@ Once all eleven buffers existed, we combined them into one exclusion layer in fo
 - **Dissolve** – no grouping field, so every buffer that touches another one melts into a single shape with no leftover internal lines.
 - **Clip** – cut to the Frame boundary, so buffers that stuck out past the edge of the study area don't count.
 
-The result, `Total_Exclusion_Area`, is exactly one polygon feature.
+The result, `Total_Exclusion_Area`, is exactly one feature- a single MultiPolygon
+object whose geometry contains many polygon parts (and holes). Converting it
+multipart → singleparts yields the individual patches Person 3 filters by ≥ 18 ha.
 
 ### 5. How much area is actually excluded
 
